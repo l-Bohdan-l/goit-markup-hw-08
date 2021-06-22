@@ -1,20 +1,45 @@
 .logo-link {
   font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
-
-.logo-link__footer-second-logo {
-  color: var(--fourth-accent-color);
-}
-
-.header__logo {
-  margin-right: 93px;
 }
 
 .logo-link__second-logo {
   color: var(--third-accent-color);
 }
+
+// 768 +
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+// 1200 +
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
+// .logo-link__footer-second-logo {
+//   color: var(--fourth-accent-color);
+// }
+
+// .logo-link {
+//   font-family: var(--secondary-font);
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+// }
+
+//
