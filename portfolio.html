@@ -20,20 +20,26 @@
         <div class="container header-container">
             <nav class="header-navigation">
                 <a class="logo-link header__logo link" href="./index.html">
-                    <span class="logo-link__first-logo" lang="en">Web<span class="logo-link__second-logo" lang="en">Studio</span></span>
+                    <span class="logo-link__first-logo" lang="en">Web<span class="logo-link__second-logo"
+                            lang="en">Studio</span></span>
                 </a>
                 <ul class="navigation-list list">
                     <li class="navigation-list__item">
-                        <a class="navigation-list__link link" href="./index.html">Студия</a>
+                        <a class="navigation-list__link  link" href="./index.html">Студия</a>
                     </li>
                     <li class="navigation-list__item">
-                        <a class="navigation-list__link link current" href="./portfolio.html">Портфолио</a>
+                        <a class="navigation-list__link link header-current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="navigation-list__item">
                         <a class="navigation-list__link link" href="">Контакты</a>
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="header__mobile-menu-btn" data-menu-button>
+                <svg class="header__mobile-menu-icon" width='40px' height='40px'>
+                    <use href="./images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
             <ul class="header-contacts-list list">
                 <li class="header-contacts-list__item">
                     <a class="header-contacts-list__link link" href="mailto:info@devstudio.com">
@@ -53,13 +59,57 @@
                 </li>
             </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon" width="40px" height="40px">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__nav-list list">
+                    <li class="mobile-menu__nav-list-item">
+                        <a href="" class="mobile-menu__nav-list-link link " href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__nav-list-item">
+                        <a href="" class="mobile-menu__nav-list-link link header-current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu__nav-list-item">
+                        <a href="" class="mobile-menu__nav-list-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__contacts-list list">
+                    <li class="mobile-menu__contacts-list-item">
+                        <a class="mobile-menu__contacts-list-link mobile-menu__tel-link link" href="tel:+380961111111">+38
+                            096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-list-item">
+                        <a class="mobile-menu__contacts-list-link mobile-menu__mail-link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social-list list">
+                    <li class="mobile-menu__social-list-item">
+                        <a href="" class="mobile-menu__social-list-link link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu__social-list-item">
+                        <a href="" class="mobile-menu__social-list-link link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu__social-list-item">
+                        <a href="" class="mobile-menu__social-list-link link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu__social-list-item">
+                        <a href="" class="mobile-menu__social-list-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section class="section">
             <div class="container">
                 <h2 hidden>Портфолио</h2>
                 <!-- Portfolio Navigation Buttons-->
-                <ul class="portfolio-nav-list list">
+                <!-- <ul class="portfolio-nav-list list">
                     <li class="portfolio-nav-list__item">
                         <button class="portfolio-nav-list__btn" type="button">Все</button>
                     </li>
@@ -75,9 +125,9 @@
                     <li class="portfolio-nav-list__item">
                         <button class="portfolio-nav-list__btn" type="button">Маркетинг</button>
                     </li>
-                </ul>
+                </ul> -->
                 <!--Portfolio menu-->
-                <ul class="portfolio-сatalog list">
+                <!-- <ul class="portfolio-сatalog list">
                     <li class="portfolio-сatalog__item">
                         <a href="#" class="portfolio-product-wrapper link">
                             <div class="portfolio-product-wrapper__img">
@@ -216,11 +266,11 @@
                         </div>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div>
                 <a class="logo-link link" href="./index.html">
@@ -297,6 +347,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>
