@@ -1,20 +1,7 @@
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fourth-accent-color);
-  text-align: center;
-  width: 696px;
-  margin: 0 auto;
-}
-
 .hero {
   /* background: #2f303a; */
   text-align: center;
-  background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(../images/hero/hero-img.jpg);
+  background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/hero/hero-img.jpg);
   background-color: #c4c4c4;
   max-width: 1600px;
   margin: 0 auto;
@@ -22,7 +9,18 @@
 }
 
 .hero-container {
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fourth-accent-color);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .modal-btn {
@@ -49,4 +47,61 @@
 
 .hero__btn {
   margin-top: 30px;
+}
+
+// 0-767
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-mobile.jpg);
+  }
+
+  .hero__title {
+    max-width: 360px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/hero/hero-img-mobile@2x.jpg);
+    }
+  }
+}
+
+// 768 +
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-tablet.jpg);
+  }
+
+  .hero__title {
+    width: 360px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/hero/hero-img-tablet@2x.jpg);
+    }
+  }
+}
+
+// 1200 +
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-desktop.jpg);
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/hero/hero-img-desktop@2x.jpg);
+    }
+  }
+
+  .hero-container {
+    padding: 200px 0 200px 0;
+  }
 }

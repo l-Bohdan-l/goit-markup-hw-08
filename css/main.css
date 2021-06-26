@@ -165,6 +165,7 @@ body {
 }
 
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -181,13 +182,20 @@ body {
   pointer-events: none;
 }
 
+@media screen and (max-width: 480px) {
+  .modal-window {
+    max-width: 450px;
+    max-height: 100%;
+  }
+}
 .modal-window {
+  overflow-y: scroll;
   position: absolute;
+  max-width: 450px;
+  max-height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 40px;
@@ -216,6 +224,26 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-window {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-window {
+    max-height: none;
+    max-width: none;
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal-form-head {
   font-family: var(--main-font);
   font-weight: 700;
@@ -261,24 +289,24 @@ body {
 .modal-form-comment::-moz-placeholder {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-comment:-ms-input-placeholder {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-form-comment::placeholder {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -319,8 +347,8 @@ input:-webkit-autofill:active {
 .modal-form-checkbox-policy {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--fifth-accent-color);
   margin-bottom: 30px;
@@ -368,6 +396,25 @@ input:-webkit-autofill:active {
   background-color: #188ce8;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form-comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form-comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .modal-form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .modal-form-checkbox-policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .logo-link {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -659,22 +706,10 @@ input:-webkit-autofill:active {
     margin-top: 27px;
   }
 }
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--fourth-accent-color);
-  text-align: center;
-  width: 696px;
-  margin: 0 auto;
-}
-
 .hero {
   /* background: #2f303a; */
   text-align: center;
-  background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-img.jpg);
+  background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/hero/hero-img.jpg);
   background-color: #c4c4c4;
   max-width: 1600px;
   margin: 0 auto;
@@ -682,7 +717,18 @@ input:-webkit-autofill:active {
 }
 
 .hero-container {
-  padding: 200px 0 200px 0;
+  padding: 118px 0 118px 0;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fourth-accent-color);
+  text-align: center;
+  margin: 0 auto;
 }
 
 .modal-btn {
@@ -708,6 +754,55 @@ input:-webkit-autofill:active {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-mobile.jpg);
+  }
+
+  .hero__title {
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-mobile@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-tablet.jpg);
+  }
+
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-desktop.jpg);
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero/hero-img-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding: 200px 0 200px 0;
+  }
+}
 .what-we-do {
   padding-bottom: 94px;
 }
