@@ -965,25 +965,6 @@ input:-webkit-autofill:active {
 }
 .clients-list {
   display: flex;
-  justify-content: space-between;
-}
-
-.clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-list__link:hover, .clients-list__link:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.our-clients__title {
-  margin-bottom: 50px;
 }
 
 .clients-list__icon {
@@ -994,6 +975,83 @@ input:-webkit-autofill:active {
   fill: var(--accent-color);
 }
 
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-list__link:hover, .clients-list__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .clients-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .clients-list__link {
+    width: 210px;
+    height: 92px;
+  }
+
+  .our-clients__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .clients-list__item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .clients-list__link {
+    width: 226px;
+    height: 92px;
+  }
+
+  .our-clients__title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__link {
+    width: 170px;
+    height: 92px;
+  }
+
+  .clients-list {
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .clients-list__item {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .our-clients__title {
+    margin-bottom: 50px;
+  }
+}
 .features-list__suptitle {
   display: block;
   text-align: center;
