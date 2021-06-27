@@ -578,10 +578,6 @@ input:-webkit-autofill:active {
   justify-content: space-between;
 }
 
-.header-current {
-  color: var(--accent-color);
-}
-
 @media screen and (max-width: 767px) {
   .navigation-list {
     display: none;
@@ -718,6 +714,10 @@ input:-webkit-autofill:active {
     margin-top: 27px;
   }
 }
+.header-current {
+  color: var(--accent-color);
+}
+
 .hero {
   /* background: #2f303a; */
   text-align: center;
