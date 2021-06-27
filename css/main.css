@@ -721,7 +721,7 @@ input:-webkit-autofill:active {
 .hero {
   /* background: #2f303a; */
   text-align: center;
-  background-image: linear-gradient(#2f303a66, #2f303a66), url(../../images/hero/hero-img.jpg);
+  background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/hero/hero-img.jpg);
   background-color: #c4c4c4;
   max-width: 1600px;
   margin: 0 auto;
@@ -766,7 +766,7 @@ input:-webkit-autofill:active {
 
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url(../../images/hero/hero-img-mobile.jpg);
+    background-image: url(../images/hero/hero-img-mobile.jpg);
   }
   .hero__title {
     max-width: 360px;
@@ -774,12 +774,12 @@ input:-webkit-autofill:active {
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-img-mobile@2x.jpg);
+    background-image: url(../images/hero/hero-img-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/hero/hero-img-tablet.jpg);
+    background-image: url(../images/hero/hero-img-tablet.jpg);
   }
   .hero__title {
     width: 360px;
@@ -787,12 +787,12 @@ input:-webkit-autofill:active {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-img-tablet@2x.jpg);
+    background-image: url(../images/hero/hero-img-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../../images/hero/hero-img-desktop.jpg);
+    background-image: url(../images/hero/hero-img-desktop.jpg);
   }
   .hero__title {
     font-size: 44px;
@@ -802,7 +802,7 @@ input:-webkit-autofill:active {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero/hero-img-desktop@2x.jpg);
+    background-image: url(../images/hero/hero-img-desktop@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
