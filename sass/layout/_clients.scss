@@ -35,18 +35,17 @@
     justify-content: center;
     margin-left: -30px;
     margin-top: -30px;
-  }
 
-  .clients-list__item {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
+    &__item {
+      margin-left: 30px;
+      margin-top: 30px;
+    }
 
-  .clients-list__link {
-    width: 210px;
-    height: 92px;
+    &__link {
+      width: 210px;
+      height: 92px;
+    }
   }
-
   .our-clients__title {
     margin-bottom: 30px;
   }
@@ -58,38 +57,36 @@
     justify-content: center;
     margin-left: -30px;
     margin-top: -30px;
-  }
 
-  .clients-list__item {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
+    &__item {
+      margin-left: 30px;
+      margin-top: 30px;
+    }
 
-  .clients-list__link {
-    width: 226px;
-    height: 92px;
+    &__link {
+      width: 226px;
+      height: 92px;
+    }
   }
-
   .our-clients__title {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients-list__link {
-    width: 170px;
-    height: 92px;
-  }
-
   .clients-list {
     justify-content: space-between;
     margin-left: 0;
     margin-top: 0;
-  }
 
-  .clients-list__item {
-    margin-left: 0;
-    margin-top: 0;
+    &__link {
+      width: 170px;
+      height: 92px;
+    }
+    &__item {
+      margin-left: 0;
+      margin-top: 0;
+    }
   }
 
   .our-clients__title {

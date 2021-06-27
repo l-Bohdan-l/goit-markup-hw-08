@@ -5,10 +5,14 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-}
 
-.logo-link__second-logo {
-  color: var(--third-accent-color);
+  &__second-logo {
+    color: var(--third-accent-color);
+  }
+
+  &__footer-second-logo {
+    color: var(--fourth-accent-color);
+  }
 }
 
 // 768 +
@@ -29,17 +33,13 @@
   }
 }
 
-.logo-link__footer-second-logo {
-  color: var(--fourth-accent-color);
-}
-
-.logo-link {
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
+// .logo-link {
+//   font-family: var(--secondary-font);
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+// }
 
 //
