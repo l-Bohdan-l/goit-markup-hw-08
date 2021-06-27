@@ -200,11 +200,12 @@
 
   .footer-container {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
-  .footer-social {
+  .footer-social__list-heading {
+    text-align: center;
     // width: 206px;
     /* margin-left: 70px; */
     /* margin-right: 93px; */
@@ -213,5 +214,21 @@
   .footer-sbscr-form__input {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+
+  .footer-address-wrap {
+    margin-right: 70px;
+  }
+
+  .footer-sbscr-form__wrapper {
+    flex-direction: row;
+  }
+
+  .footer-tablet-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
   }
 }
