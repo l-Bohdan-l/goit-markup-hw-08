@@ -23,9 +23,13 @@
 
     &__container {
       position: relative;
+      height: 100vh;
       padding-top: 48px;
       padding-bottom: 48px;
       padding-left: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__close-btn {
@@ -51,7 +55,7 @@
     }
 
     &__nav-list-item:last-child {
-      margin-bottom: 302px;
+      margin-bottom: 30px;
     }
 
     &__nav-list-item:not(:last-child) {
@@ -84,7 +88,7 @@
     }
 
     &__contacts-list-item:last-child {
-      margin-bottom: 64px;
+      margin-bottom: 15px;
     }
 
     &__social-list {

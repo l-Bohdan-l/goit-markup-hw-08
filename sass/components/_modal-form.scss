@@ -89,7 +89,7 @@ input:-webkit-autofill:active {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--fifth-accent-color);
   margin-bottom: 30px;
 
@@ -118,6 +118,10 @@ input:-webkit-autofill:active {
       border-color: var(--accent-color);
     }
   }
+}
+
+.modal-form-policy-link {
+  color: var(--accent-color);
 }
 
 .modal-form-btn {

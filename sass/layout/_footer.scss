@@ -141,7 +141,7 @@
   .social-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 
   // .social-list__item {
@@ -187,6 +187,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-address-wrap {
+    text-align: center;
   }
 
   .footer-sbscr-form {
