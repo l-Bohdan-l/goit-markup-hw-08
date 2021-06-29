@@ -1292,6 +1292,10 @@ input:-webkit-autofill:active {
   }
 }
 @media screen and (min-width: 768px) {
+  .footer-social__list-heading {
+    text-align: center;
+  }
+
   .footer-tablet-wrapper {
     display: flex;
     justify-content: space-around;
@@ -1332,7 +1336,7 @@ input:-webkit-autofill:active {
   }
 
   .footer-social__list-heading {
-    text-align: center;
+    text-align: left;
     /* margin-left: 70px; */
     /* margin-right: 93px; */
   }
@@ -1346,6 +1350,9 @@ input:-webkit-autofill:active {
   .footer-sbscr-form__wrapper {
     flex-direction: row;
   }
+  .footer-sbscr-form__head {
+    text-align: left;
+  }
 
   .footer-tablet-wrapper {
     display: flex;
@@ -1355,6 +1362,7 @@ input:-webkit-autofill:active {
 
   .footer-address-wrap {
     margin-right: 70px;
+    text-align: left;
   }
 }
 .portfolio-сatalog__item {

@@ -181,6 +181,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer-social__list-heading {
+    text-align: center;
+  }
+
   .footer-tablet-wrapper {
     display: flex;
     justify-content: space-around;
@@ -225,7 +229,7 @@
   }
 
   .footer-social__list-heading {
-    text-align: center;
+    text-align: left;
     // width: 206px;
     /* margin-left: 70px; */
     /* margin-right: 93px; */
@@ -242,6 +246,10 @@
     &__wrapper {
       flex-direction: row;
     }
+
+    &__head {
+      text-align: left;
+    }
   }
 
   .footer-tablet-wrapper {
@@ -252,5 +260,6 @@
 
   .footer-address-wrap {
     margin-right: 70px;
+    text-align: left;
   }
 }
